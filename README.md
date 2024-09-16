@@ -22,7 +22,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About Kiclic plugins</a>
+      <a href="#about-kiclic-plugins">About Kiclic plugins</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -45,7 +45,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About Kiclic Plugins
 
 This tutorial will help you install the new plugins of Kiclic on your personal webpage using HTML code. 
 
@@ -143,7 +143,7 @@ In this section, we will show you all the parameters you can use to change your 
   </iframe>
   ```
 
-  <img src="https://kiclic.com/docs/plugin-horizontal.png" alt="Logo" width="450" height="260">
+  <img src="https://kiclic.com/docs/plugin-horizontal.png" alt="Logo" width="550" height="260">
 
 * To have a thin horizontal plugin, you will need to change the src code with:
   ```sh
@@ -154,7 +154,7 @@ In this section, we will show you all the parameters you can use to change your 
   </iframe>
   ```
 
-  <img src="https://kiclic.com/docs/plugin-thin-horizontal.png" alt="Logo" width="450" height="135">
+  <img src="https://kiclic.com/docs/plugin-thin-horizontal.png" alt="Logo" width="550" height="135">
 
 ### Parameters
 
@@ -170,18 +170,18 @@ You will be able to set the width and the length of your plugin as well as other
 | backgroundColor | white        | Color    |
 
 
-* You will call these parameters as below in your HTML code:
+* You will call these parameters like below in your HTML code:
   ```sh
     <iframe
-    src="https://kiclic.com/plugin/shotgun_plugin_horizontal.html?uuid=5f5a833f-183e-11ee-a497-fa163eed83e6&titleColor=black&textColor=gray&timerColor=white&timerBackColor=violet&timerHoursColor=black&backgroundColor=white"
+    src="https://kiclic.com/plugin/shotgun_plugin_horizontal.html?uuid={uuid}&titleColor=black&textColor=gray&timerColor=white&timerBackColor=violet&timerHoursColor=black&backgroundColor=white"
     style="width: 450px; height: 260px;" frameborder="0"></iframe>
   ```
 
 <!-- CONTACT -->
 ## Contact
 
-Kiclic Instagram - [https://www.instagram.com/kiclic_profite]https://www.instagram.com/kiclic_profite
+Kiclic Instagram - [https://www.instagram.com/kiclic_profite]
 
-Kiclic Facebook: [https://www.facebook.com/profile.php?id=61559798553597](https://www.facebook.com/profile.php?id=61559798553597)
+Kiclic Facebook: [https://www.facebook.com/profile.php?id=61559798553597]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
