@@ -154,7 +154,7 @@ In this section, we will show you all the parameters you can use to change your 
   </iframe>
   ```
 
-  <img src="https://kiclic.com/docs/plugin-thin-horizontal.png" alt="Logo" width="550" height="135">
+  <img src="https://kiclic.com/docs/plugin-thin-horizontal.png" alt="Logo" width="550" height="125">
 
 ### Parameters
 
