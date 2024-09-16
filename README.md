@@ -27,15 +27,15 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#integration-on-html-page"></a>Integration on HTML page</li>
-        <li><a href="#integration-on-content-management-system(cms)">Integration on Content Management System (CMS)</a></li>
+        <li><a></a>Integration on HTML page</li>
+        <li><a>Integration on Content Management System (CMS)</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a>
       <ul>
-        <li><a href="#vertical-plugin"></a>Vertical plugin</li>
-        <li><a href="#horizontal-plugin">Horizontal plugin</a></li>
-        <li><a href="#parameters">Parameters</a></li>
+        <li><a></a>Vertical plugin</li>
+        <li><a>Horizontal plugin</a></li>
+        <li><a>Parameters</a></li>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
