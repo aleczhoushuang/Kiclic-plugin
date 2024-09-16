@@ -143,7 +143,7 @@ In this section, we will show you all the parameters you can use to change your 
   </iframe>
   ```
 
-  <img src="https://kiclic.com/docs/plugin-horizontal.png" alt="Logo" width="550" height="230">
+  <img src="https://kiclic.com/docs/plugin-horizontal.png" alt="Logo" width="550" height="220">
 
 * To have a thin horizontal plugin, you will need to change the src code with:
   ```sh
