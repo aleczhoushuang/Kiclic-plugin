@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/aleczhoushuang/Kiclic-plugin">
-    <img src="https://kiclic.com/docs/KiclicLogo.png" alt="Logo" width="160" height="80">
+    <img src="https://kiclic.com/docs/KiclicLogo.png" alt="Logo" width="250" height="80">
   </a>
 
   <h3 align="center">Kiclic plugins</h3>
@@ -13,7 +13,7 @@
   <p align="center">
     Instructions to add Kiclic plugins on webpages
     <br />
-    <a href="https://kiclic.com"><strong>Visit the app website for more informations</strong></a>
+    <a href="https://kiclic.com"><strong>Visit the app website for more informations on the app</strong></a>
   </p>
 </div>
 
@@ -27,11 +27,17 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#integration-on-html-page"></a>Integration on HTML page</li>
+        <li><a href="#integration-on-content-management-system(cms)">Integration on Content Management System (CMS)</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#vertical-plugin"></a>Vertical plugin</li>
+        <li><a href="#horizontal-plugin">Horizontal plugin</a></li>
+        <li><a href="#parameters">Parameters</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -41,113 +47,141 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This tutorial will help you install the new plugins of Kiclic on your personal webpage using HTML code. 
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Please note that no prerequisite or installations are needed to integrate these plugins on your webpage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+There will be four different plugins that you can integrate on your webpage. In this section, we will first show you how to add the HTML code in your webpage.
 
-### Prerequisites
+### Integration on HTML page
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+In your html code, you will need to call an iframe and replace "{uuid}" with your user uuid from the Kiclic application:
 
-### Installation
+```sh
+<iframe 
+  src="https://kiclic.com/plugin/shotgun_plugin_vertical.html?uuid={uuid}" 
+  style="width: 300px; height: 540px;" 
+  frameborder="0">
+</iframe>
+```
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+### Integration on Content Management System (CMS)
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+In this section, we will take the example of the Wordpress CMS.
+
+When editing your page, you can add an HTML element (Personalized HTML on Wordpress) and you will need to add the following code inside of it:
+
+```sh
+<iframe 
+  src="https://kiclic.com/plugin/shotgun_plugin_vertical.html?uuid={uuid}" 
+  style="width: 300px; height: 540px;" 
+  frameborder="0">
+</iframe>
+```
+
+If you visualize nothing after changes, you can replace the above code with this one:
+
+```sh
+<div style="position: relative; overflow: hidden; width: 300px; margin: 0 auto;">
+  <iframe 
+    src="https://kiclic.com/plugin/shotgun_plugin_vertical.html?uuid={uuid}" 
+    style="width: 300px; height: 540px;" 
+    frameborder="0">
+  </iframe>
+</div>
+```
+
+The width of your div element shall match the width of your iframe for a centered iframe.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+In this section, we will show you all the parameters you can use to change your plugin structure.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Vertical plugin
 
+* To have a vertical plugin, you will need to change the src code like:
+  ```sh
+  <iframe 
+    src="https://kiclic.com/plugin/shotgun_plugin_vertical.html?uuid={uuid}" 
+    style="width: 300px; height: 540px" 
+    frameborder="0">
+  </iframe>
+  ```
+  <img src="https://kiclic.com/docs/plugin-vertical.png" alt="Logo" width="300" height="540">
+
+* To have a thin vertical plugin, you will need to change the src code with:
+  ```sh
+  <iframe 
+    src="https://kiclic.com/plugin/shotgun_plugin_thin_vertical.html?uuid={uuid}" 
+    style="width: 150px; height: 495px;"
+    frameborder="0">
+  </iframe>
+  ```
+
+  <img src="https://kiclic.com/docs/plugin-thin-vertical.png" alt="Logo" width="150" height="495">
+
+### Horizontal plugin
+
+* To have a horizontal plugin, you will need to change the src code like:
+  ```sh
+  <iframe 
+    src="https://kiclic.com/plugin/shotgun_plugin_horizontal.html?uuid={uuid}" 
+    style="width: 450px; height: 260px;" 
+    frameborder="0">
+  </iframe>
+  ```
+
+  <img src="https://kiclic.com/docs/plugin-horizontal.png" alt="Logo" width="450" height="260">
+
+* To have a thin horizontal plugin, you will need to change the src code with:
+  ```sh
+  <iframe 
+    src="https://kiclic.com/plugin/shotgun_plugin_thin_horizontal.html?uuid={uuid}" 
+    style="width: 450px; height: 135px;"
+    frameborder="0">
+  </iframe>
+  ```
+
+  <img src="https://kiclic.com/docs/plugin-thin-horizontal.png" alt="Logo" width="450" height="135">
+
+### Parameters
+
+You will be able to set the width and the length of your plugin as well as other parameters like:
+
+| Parameter       | Example      | Style    |
+| --------------- | ------------ | -------- |
+| titleColor      | black        | Color    |
+| textColor       | gray         | Color    |
+| timerColor      | white        | Color    |
+| timerBackColor  | violet       | Color    |
+| timerHoursColor | black        | Color    |
+| backgroundColor | white        | Color    |
+
+
+* You will call these parameters as below in your HTML code:
+  ```sh
+    <iframe
+    src="https://kiclic.com/plugin/shotgun_plugin_horizontal.html?uuid=5f5a833f-183e-11ee-a497-fa163eed83e6&titleColor=black&textColor=gray&timerColor=white&timerBackColor=violet&timerHoursColor=black&backgroundColor=white"
+    style="width: 450px; height: 260px;" frameborder="0"></iframe>
+  ```
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Kiclic Instagram - [https://www.instagram.com/kiclic_profite]https://www.instagram.com/kiclic_profite
 
-Project Link: [https://github.com/aleczhoushuang/Kiclic-plugin](https://github.com/aleczhoushuang/Kiclic-plugin)
+Kiclic Facebook: [https://www.facebook.com/profile.php?id=61559798553597](https://www.facebook.com/profile.php?id=61559798553597)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
